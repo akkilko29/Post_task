@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "9655833e-8b7d-4103-872d-c509b62d5a75",
+		"name": "posts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25906471"
+	},
+	"item": [
+		{
+			"name": "http://localhost/posts/api/v1/create.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Testing 1\",\r\n    \"content\": \"Testing 1\",\r\n    \"author\": \"Ankit Sharma\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/posts/api/v1/create.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"posts",
+						"api",
+						"v1",
+						"create.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/posts/api/v1/read.php?id=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/posts/api/v1/read.php?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"posts",
+						"api",
+						"v1",
+						"read.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/posts/api/v1/update.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"title\": \"Testing 2\",\r\n    \"content\": \"Testing 2\",\r\n    \"author\": \"Ankit Sharma\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/posts/api/v1/update.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"posts",
+						"api",
+						"v1",
+						"update.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/posts/api/v1/read.php",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/posts/api/v1/read.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"posts",
+						"api",
+						"v1",
+						"read.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
